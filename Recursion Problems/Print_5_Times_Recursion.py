@@ -23,3 +23,4 @@ n=int(input())
 name(count,n)
 
 # Recursion Tree f(1,4)->  f(2,4) -> f(3,4) -> f(4,4)...
+# TC - O(n) and SC - O(n)
