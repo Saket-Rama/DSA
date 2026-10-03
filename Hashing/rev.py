@@ -1,9 +1,10 @@
-st=input()
+n=int(input())
+arr=list(map(int,input().split()))
 q=int(input())
-hash_table=[0]*26
-for i in range(len(st)):
-    hash_table[ord(st[i])-ord('a')]+=1
+hash_table=[0]*13
+for i in range(n):
+    hash_table[arr[i]]+=1
 while q>0:
-    c=input()
-    print(hash_table[ord(c)-ord('a')])
-    q-=1
+    num=int(input())
+    print(hash_table[num])
+    q-=1    
