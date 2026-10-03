@@ -22,5 +22,6 @@ for i in range(len(st)):
     hash_table[ord(st[i])-ord('a')]+=1
 while q>0:
     c=input("Enter the character\n")
+    # fetch
     print(hash_table[ord(c)-ord('a')])
     q-=1
