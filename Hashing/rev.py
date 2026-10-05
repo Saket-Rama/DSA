@@ -1,9 +1,9 @@
-s = "banana"
-hash_table=[0]*26
-for i in range(len(s)):
-    hash_table[ord(s[i])-ord('a')]+=1
-q=int(input())
-while q>0:
-    n=input()
-    print(hash_table[ord(n)-ord('a')])
-    q-=1
+arr = [1, 3, 2, 3, 4, 3, 2, 1]
+hash_table=[0]*13
+for i in range(len(arr)):
+    hash_table[arr[i]]+=1
+max=0
+for i in range(len(hash_table)):
+    if max<hash_table[i]:
+        max = hash_table[i]
+print(max)
