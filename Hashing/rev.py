@@ -1,7 +1,7 @@
-arr = [4, 2, 7, 2, 5, 4]
+arr = [1, 2, 3, 2, 4, 1, 5]
 hash_table=[0]*13
 for i in range(len(arr)):
     hash_table[arr[i]]+=1
-    if hash_table[arr[i]]==2:
-        print(arr[i])
-        break
+for i in range(len(arr)):
+    if hash_table[arr[i]]==1:
+        print(arr[i],end=' ')
