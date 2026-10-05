@@ -1,9 +1,9 @@
-arr = [1, 2, 2, 3, 4, 1, 5, 3]
+arr = [1, 2, 1, 3, 2, 4, 1]
 hash_table=[0]*13
 for i in range(len(arr)):
     hash_table[arr[i]]+=1
-no_of_numbers=0
-for i in range(len(hash_table)):
-    if hash_table[i]>0:
-        no_of_numbers+=1
-print(no_of_numbers)
+q=int(input())
+while q>0:
+    num=int(input())
+    print(f"{num} and its frequency is {hash_table[num]}")
+    q-=1
