@@ -1,22 +1,22 @@
 """
-Find Missing Number — Medium
+Find Duplicate Number — Medium
 
-Given numbers from 1 to 10, with one number missing:
+Given:
 
-arr = [1, 2, 3, 4, 6, 7, 8, 9, 10]
+arr = [1, 3, 4, 2, 5, 3]
 
-Find the missing number.
+Find the number that appears more than once.
 
 Expected:
 
-5
+3
 """
-arr = [1, 2, 3, 4, 6, 7, 8, 9, 10]
+arr = [1, 3, 4, 2, 5, 3]
 hash_table=[0]*13
-missing_number=0
+more_than_once=0
 for i in range(len(arr)):
     hash_table[arr[i]]+=1
-for i in range(len(arr)):
-    if hash_table[i]==0:
-        missing_number=i
-print(missing_number)
+for i in range(len(arr)+1):
+    if hash_table[i]>1:
+        more_than_once=i
+print(more_than_once)
