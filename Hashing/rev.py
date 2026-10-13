@@ -1,6 +1,7 @@
-n=int(input())
-arr=list(map(int,input().split(" ")))
+s = "banana"
+queries = ['a', 'b', 'n', 'z']
 hmp={}
-for i in arr:
+for i in s:
     hmp[i]=hmp.get(i,0)+1
-print(hmp)
+for i in queries:
+    print(hmp.get(i,0))
