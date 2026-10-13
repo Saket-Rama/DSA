@@ -1,3 +1,4 @@
+# why are the dicts used because a array can be of 10^7 not more than that and waste unnecessary memory...
 n=int(input("Enter the range of the array\n"))
 arr=list(map(int,input("Enter the Elements\n").split(" ")))
 # Pre-compute
