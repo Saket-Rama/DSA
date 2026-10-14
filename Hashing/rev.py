@@ -79,7 +79,12 @@ hmp={}
 for i in arr:
     hmp[i]=hmp.get(i,0)+1
 highest_freq=0
+ans=0
 for num in hmp:
     if highest_freq<hmp[num]:
-        highest_freq=num
-print(highest_freq)
+        highest_freq=hmp[num]
+ans=float('inf')
+for n in hmp:
+    if hmp[n]==highest_freq and n<ans:
+        ans=n
+print(ans)
