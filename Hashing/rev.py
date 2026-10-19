@@ -32,9 +32,11 @@ Don't use Counter or sorting.
 
 Concept: Frequency hashing and maintaining original order.
 """
-n=input()
-st="abacdae"
+st="aabbcdde"
 hmp={}
 for i in st:
     hmp[i]=hmp.get(i,0)+1
-print(hmp.get(n,0))
+for i in hmp:
+    if hmp[i]==1:
+        print(i)
+        break
