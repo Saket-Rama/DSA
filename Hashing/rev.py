@@ -32,9 +32,9 @@ Don't use Counter or sorting.
 
 Concept: Frequency hashing and maintaining original order.
 """
-n=int(input())
-arr=[1,2,3,2,1]
-hmp=[0]*13
-for i in range(1,len(arr)):
-    hmp[arr[i]]+=1
-print(hmp[n])
+n=input()
+st="abacdae"
+hmp=[0]*26
+for i in st:
+    hmp[ord(i)-ord('a')]+=1
+print(hmp[ord(n)-ord('a')])
