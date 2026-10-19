@@ -33,12 +33,10 @@ Don't use Counter or sorting.
 Concept: Frequency hashing and maintaining original order.
 """
 
-s = "aabbcdde"
-hmp={}
-for ch in s:
-    hmp[ch]=hmp.get(ch,0)+1
-occurence=1
-for num in hmp:
-    if hmp[num]==occurence:
-        print(num)
-        break
+n=int(input())
+arr=[1,2,3,2,1]
+count=0
+for i in arr:
+    if n==i:
+        count+=1
+print(count)
