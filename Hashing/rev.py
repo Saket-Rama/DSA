@@ -32,11 +32,9 @@ Don't use Counter or sorting.
 
 Concept: Frequency hashing and maintaining original order.
 """
-
 n=int(input())
 arr=[1,2,3,2,1]
-count=0
-for i in arr:
-    if n==i:
-        count+=1
-print(count)
+hmp=[0]*13
+for i in range(1,len(arr)):
+    hmp[arr[i]]+=1
+print(hmp[n])
