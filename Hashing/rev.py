@@ -34,7 +34,7 @@ Concept: Frequency hashing and maintaining original order.
 """
 n=input()
 st="abacdae"
-hmp=[0]*26
+hmp=[0]*256
 for i in st:
-    hmp[ord(i)-ord('a')]+=1
-print(hmp[ord(n)-ord('a')])
+    hmp[ord(i)]+=1
+print(hmp[ord(n)])
