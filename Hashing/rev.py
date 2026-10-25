@@ -32,8 +32,11 @@ Don't use Counter or sorting.
 
 Concept: Frequency hashing and maintaining original order.
 """
-s="abcdefAbcd"
-hmp=[0]*256
-for i in s:
-    hmp[ord(i)]+=1
-print(hmp[ord('A')])
+s = "aabbcdde"
+hmp={}
+for f in s:
+    hmp[f]=hmp.get(f,0)+1
+for freq in hmp:
+    if hmp[freq]==1:
+        print(freq)
+        break
