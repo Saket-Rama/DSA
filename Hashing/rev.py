@@ -32,8 +32,8 @@ Don't use Counter or sorting.
 
 Concept: Frequency hashing and maintaining original order.
 """
-s="abcdefabcd"
-hmp=[0]*225
+s="abcdefAbcd"
+hmp=[0]*256
 for i in s:
-    hmp[ord(i)-ord('a')]+=1
-print(hmp[ord('z')-ord('a')])
+    hmp[ord(i)]+=1
+print(hmp[ord('A')])
