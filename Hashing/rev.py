@@ -36,7 +36,7 @@ s = "aabbcdde"
 hmp={}
 for f in s:
     hmp[f]=hmp.get(f,0)+1
-for freq in hmp:
-    if hmp[freq]==1:
-        print(freq)
+for ch in s:
+    if hmp[ch]==1:
+        print(ch)
         break
